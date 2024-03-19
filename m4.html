@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4: Software Quality and Testing</title>
+</head>
+<body>
+    <h1>Module 4: Software Quality and Testing</h1>
+    <p>Principles, methodologies, and best practices related to software 
+        quality assurance (SQA) and testing.</p>
+    <hr>
+    <h2>Introduction to Software Quality Assurance (SQA)</h2>
+    <p>SQA is a set of activities and processes aimed at ensuring software 
+        proudcts meet specified quality standards and fulfill customer 
+        expectations.</p>
+    <p>3 Goals of SQA:</p>
+    <ol>
+        <li>Ensuring product has desired quality properties</li>
+        <li>Ensuring process by which product was built is of sufficient 
+            quality</li>
+        <li>Ensuring QA of product and process is of sufficient quality</li>
+    </ol>
+    <h3>What is software quality?</h3>
+    <p>"The degree of conformance to explicit or implicit requirements and 
+        expectations" (IEEE n.d.)</p>
+    <img src="./images/m4/quality_triangle.png" alt="Diagram of 
+    the quality triangle" style="width: 600px;">
+    <p>Functional quality (meeting the specified requirements)</p>
+    <ul>
+        <li>The product's compliance with functional (explicit) requirements 
+            and design specifications</li>
+    </ul>
+    <p>Non-functional/ structural quality</p>
+    <ul>
+        <li>The product's inner characteristics and architecture, i.e. 
+            structural (implicit) requirements, e.g. usability, maintainability, 
+            uderstandability, efficiency, security and ethics
+        </li>
+    </ul>
+    <p>Process quality</p>
+    <ul>
+        <li>A repeatable development process that reliably delivers quality 
+            software while meeting delivery dates and budgets</li>
+    </ul>
+    <h3>What are the quality attributes of software systems?</h3>
+    <p>Features that facilitate the measurement of a software product's 
+        performance by software testing professionals.</p>
+    <img src="./images/m4/quality_attributes.png" alt="Diagram of 
+    quality attributes" style="width: 600px;">
+    <h3>Functional quality</h3>
+    <p>Functional completeness</p>
+    <ul>
+        <li>The measure of how well the system of a component meets all the 
+            stated requirements of the user. it measures the degree to which 
+            the system or a component includes all the features, functions, and 
+            capabilities required.</li>
+    </ul>
+    <p>Functional correctness</p>
+    <ul>
+        <li>The measure of how accurate and reliable the system or a component 
+            is in performing its intended task. It tests the ability of the 
+            system or a component to follow the rules and specs correctly.</li>
+    </ul>
+    <p>Functional appropriateness</p>
+    <ul>
+        <li>Measures the degree to which the system or a component meets the 
+            user's expectations. It evaluated the system's or the component's 
+            ability to perform the tasks it is expected to do in a way that 
+            satisfies the user.</li>
+    </ul>
+    <h3>Non-functional quality</h3>
+    <img src="./images/m4/non_functional.png" alt="Summary of 
+    non-functional quality attributes" style="width: 600px;">
+    <hr>
+    <h2>SQA Approaches</h2>
+    <h3>Software Verification and Validation (the V-model)</h3>
+    <p>Verification: Being built correctly?</p>
+    <p>Validation: Building the right thing?</p>
+    <img src="./images/m4/v_model.png" alt="Summary of 
+    the V-model of software quality assurance" style="width: 600px;">
+    <h3>Waterfall-style SQA</h3>
+    <img src="./images/m4/waterfall.png" alt="Summary of 
+    waterfall model of software quality assurance" style="width: 600px;">
+    <p>Key characteristics:</p>
+    <ul>
+        <li>Sequential flow: each phase must be completed before the next one 
+            begins</li>
+        <li>Document-driven: emphasis is placed on extensive documentation 
+            at each phase</li>
+        <li>Rigid and linear: changes are difficult to accommodate once a phase 
+            is complete</li>
+        <li>Well-suited for stable requirements: works best when the 
+            requirements are well understood and unlikely to change</li>
+    </ul>
+    <h3>Test-driven development (TDD)</h3>
+    <p>Software development methodology that revolves around a simple iterative 
+        process: write a test, write the minimum amount of code to make that 
+        test pass, refactor the code, and repeat. This is referred to as the 
+        "Red-Green-Refactor" cycle.</p>
+    <img src="./images/m4/tdd.png" alt="Diagram of 
+    test-driven development" style="width: 600px;">
+    <p>Red: write a test that defines a function or improvements of a function, 
+        which should fail initially because the function or feature is not yet 
+        implemented. The "Red" phase indicated the test is failing.</p>
+    <p>Green: write the minimum amount of code necessary to make the test pass. 
+        The goal is not to write perfect or complete code at this point, but to 
+        make the test pass.</p>
+    <p>Refactor: clean the code while keeping it functional. Refactoring 
+        involves improving the structure of the code without changing its 
+        behaviour. After refactoring, the tests are run again to ensure the 
+        code still works as expected.</p>
+    <p>Benefits of TDD:</p>
+    <ul>
+        <li>Early bug detection</li>
+        <li>Improved code quality</li>
+        <li>Documentation - tests serve as documentation</li>
+        <li>Confidence in code changes</li>
+    </ul>
+    <p>May not be the best fit for everyone.</p>
+    <hr>
+    <h2>Software Testing</h2>
+    <h3>What is software testing?</h3>
+    <p>Process of evaluating and verifying that a computer program or system 
+        functions as intended. It identifies error, bugs, or defects, and 
+        ensures software meets specified requirements.</p>
+    <img src="./images/m4/testing.png" alt="Diagram of the objectives and 
+    levels of software testing" style="width: 600px;">
+    <h3>Large-scale complex software system</h3>
+    <p>Challenges:</p>
+    <ul>
+        <li>Software can be complex</li>
+        <li>Requirements are subject to change</li>
+        <li>Small changes can have large repercussions</li>
+        <li>Time and resources are limited</li>
+        <li>Lack of access to real-world environments</li>
+        <li>Difficulty in reproducing errors</li>
+        <li>Some quality requirements are difficult to specifiy in an 
+            unambiguous way</li>
+    </ul>
+</body>
+</html>
