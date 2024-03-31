@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 5: Unit Testing and Code Coverage</title>
+</head>
+<body>
+    <h1>Module 5: Unit Testing and Code Coverage</h1>
+    <p>Unit testing ensures reliability and functionality of individual units 
+        of code. Code coverage measures the extent to which the source code is 
+        tested.</p>
+    <hr>
+    <h2>What is unit testing?</h2>
+    <p>A software testing technique where individual units or components of a 
+        software application are tested in isolation to ensure they are 
+        correct. The smallest testable part of an application. Python uses 
+        pytest.</p>
+    <p>Characteristics of unit testing:</p>
+    <ul>
+        <li>Isolation: test is isolated from rest of app. Dependencies are 
+            often mocked</li>
+        <li>Automation: tests are usually automated</li>
+        <li>Repeatable: test should yield consistent results</li>
+        <li>Fast execution: fast to enable quick feedback</li>
+        <li>Early detection of defects: find problems early</li>
+    </ul>
+    <img src="./images/m5/test_cycle.png" alt="Diagram of 
+    unit test process with inputs and outputs" style="width: 600px;">
+    <hr>
+    <h2>Characteristics of effective test cases</h2>
+    <ul>
+        <li>Relevance: tied to requirements that are critical to the app</li>
+        <li>Clarity and simplicity: easy to understand with simple test 
+            data</li>
+        <li>Independence: modular</li>
+        <li>Non-redundancy: no duplication</li>
+    </ul>
+    <hr>
+    <h2>Test case design</h2>
+    <p>Components:</p>
+    <ol>
+        <li>Test case ID</li>
+        <li>Test description: what init, function, or feature is being 
+            verified</li>
+        <li>Test input</li>
+        <li>Expected output</li>
+        <li>Actual output</li>
+        <li>Pass/ fail</li>
+    </ol>
+    <img src="./images/m5/example.png" alt="Example table of testing 
+    components" style="width: 600px;">
+    <hr>
+    <h2>Unit testing in Python</h2>
+    <img src="./images/m5/assert.png" alt="Table of assert statements" 
+    style="width: 600px;">
+    <hr>
+    <h2>Code coverage</h2>
+    <h3>Assertions</h3>
+    <p>Code coverage is a metric used to measure the proportion of code 
+        executed in automated testing.</p>
+    <p>Code coverage metrics:</p>
+    <ul>
+        <li>Line coverage: % of lines executed at least once during 
+            testing</li>
+        <li>Branch coverage: % of decision pointws taken during testing</li>
+        <li>Statement coverage: statements rather than lines of code</li>
+        <li>Function coverage: % of methods invoked during testing</li>
+    </ul> 
+</body>
+</html>
